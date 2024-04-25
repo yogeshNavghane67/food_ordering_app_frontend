@@ -13,6 +13,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import LoadingButton from "@/components/LoadingButton";
+import { User } from "@/types";
+import { useEffect } from "react";
+
 
 const formSchema = z.object({
   email: z.string().optional(),
@@ -25,15 +28,20 @@ const formSchema = z.object({
 type UserFormData = z.infer<typeof formSchema>;
 
 type Props = {
+  currentUser: User;
   onSave: (userProfileData: UserFormData) => void;
   isLoading: boolean;
 };
 
-const UserProfileForm = ({ onSave, isLoading }: Props) => {
+const UserProfileForm = ({ onSave, isLoading, currentUser}: Props) => {
   const form = useForm<UserFormData>({
     resolver: zodResolver(formSchema),
-    // defaultValues: currentUser,
+    defaultValues: currentUser,
   });
+
+  useEffect(()=>{
+    form.reset(currentUser);
+  }, [currentUser, form]);
 
   return (
     <Form {...form}>
