@@ -7,4 +7,4 @@ const UserProfilePage = () => {
     return <UserProfileForm onSave={updateUser} isLoading={isLoading}/>
 }
 
-export default UserProfilePage
+export default UserProfilePage;
