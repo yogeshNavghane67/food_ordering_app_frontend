@@ -1,8 +1,8 @@
-import hero from "../assets/hero.png";
+import hero10 from "../assets/hero10.jpeg";
 
 const Hero = () => {
   return (
-    <div><img src={hero} className="w-full mx-h-[600px] object-cover"/></div>
+    <div><img src={hero10} className="w-full mx-h-[600px] object-cover"/></div>
   )
 }
 
