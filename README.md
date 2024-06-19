@@ -10,6 +10,7 @@ Currently, two official plugins are available:
 ## Demo
 ![Screenshot (543)](https://github.com/yogeshNavghane67/food_ordering_app_frontend/assets/124075039/d850f17b-5146-4f47-a71a-cccabc071ac7)
 
+![20240519_235404-BlendCollage (1)](https://github.com/yogeshNavghane67/food_ordering_app_frontend/assets/124075039/3d5f777a-fa18-44fb-86e1-5f7f1249dd98)
 
 
 ## Expanding the ESLint configuration
